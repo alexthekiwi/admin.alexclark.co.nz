@@ -7,7 +7,7 @@ import { resolveProductionUrl } from './resolveProductionUrl';
 
 // Here we declare which view panes show up for which schema types
 export const getDefaultDocumentNode = ({ schemaType }) => {
-    if (schemaType === `movie`) {
+    if (schemaType === `post`) {
         return S.document().views([
             S.view.form(),
             // Including the iframe pane, with a function to create the url

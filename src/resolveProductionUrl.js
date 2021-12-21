@@ -10,8 +10,14 @@ export function resolveProductionUrl(doc) {
     }
 
     const url = new URL(baseUrl);
-    url.pathname = slug
-    url.searchParams.set(`preview`, `230@AKSnmfeiopwn3`);
+
+    const pathname = (
+        doc?._type === 'post' && `/blog/${slug}` ||
+        slug
+    );
+
+    url.pathname = pathname;
+    url.searchParams.set(`preview`, `230AKSnmfeiopwn3`);
 
     return url.toString();
 }
