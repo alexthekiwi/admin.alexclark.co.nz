@@ -1,0 +1,14 @@
+# Logs
+/logs
+*.log
+
+# Dependency directories
+node_modules
+
+# Compiled sanity studio
+/dist
+/public
+
+.vercel
+
+.DS_Store
