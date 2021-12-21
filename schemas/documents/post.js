@@ -18,8 +18,8 @@ export const post = {
             },
         },
         {
-            name: 'categories',
-            title: 'Categories',
+            name: 'category',
+            title: 'Category',
             type: 'reference',
             to: [{ type: 'category' }],
         },
@@ -32,7 +32,12 @@ export const post = {
         {
             name: 'publishedAt',
             title: 'Published at',
-            type: 'datetime',
+            type: 'date',
+        },
+        {
+            name: 'excerpt',
+            title: 'Excerpt',
+            type: 'text',
         },
         {
             name: 'body',
